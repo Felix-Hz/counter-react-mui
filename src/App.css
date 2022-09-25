@@ -11,3 +11,13 @@
   max-height: 100vh; */
   font-family: "Montserrat", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:active {
+  color: inherit;
+}

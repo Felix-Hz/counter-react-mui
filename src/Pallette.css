@@ -3,15 +3,15 @@
 \-------------------------------------------------------------------------------- */
 
 :root {
-    /* Main */
-    --black: #1e2029;
-    --lime: #e0ff00;
-    --white: #FFFFFFFF;
-    --grey: #e3e3e3;
-    /* Alternative */
-    --darkblue: #1d2a49;
-    --darkgrey: #576987;
-    --blue: #0060ff;
-    --purple: #4000ff;
-    --green: #00ff00;
+  /* Main */
+  --black: #1e2029;
+  --lime: #e0ff00;
+  --white: #ffffffff;
+  --grey: #e3e3e3;
+  /* Alternative */
+  --darkblue: #1d2a49;
+  --darkgrey: #576987;
+  --blue: #0060ff;
+  --purple: #4000ff;
+  --green: #00ff00;
 }

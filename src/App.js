@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router className="App">
+    <Router className="app">
       <Navbar />
       {/* <Router>
         <div className="App">Hola</div>

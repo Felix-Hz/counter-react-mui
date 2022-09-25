@@ -12,6 +12,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  line-height: 1.75;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,4 +30,18 @@ a,
 a:visited,
 a:active {
   color: inherit;
+}
+
+.app {
+  background-color: var(--white);
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.infinity-logo {
+  margin: 0;
+  max-width: 110px;
 }

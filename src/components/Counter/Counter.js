@@ -1,7 +1,10 @@
 // ------- IMPORTS ---------
 import React, { useState, useContext } from "react";
-import { Divider, Stack, Box, Button } from "../../mui";
+import { Stack, Box, Button, Paper } from "../../mui";
 import CountContext from "../../context/CountContext";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { borderRadius } from "@mui/system";
 
 const Counter = ({ initial }) => {
   const { value, setValue } = useContext(CountContext);
@@ -19,11 +22,20 @@ const Counter = ({ initial }) => {
   };
 
   return (
-    <Stack direction="row" justifyContent="space-evenly" alignItems="center" ml={3} mr={4}>
-      <Button onClick={() => decrement()}>-</Button>
-      {value}
-      <Button onClick={() => increment()}>+</Button>
-    </Stack>
+    <Paper
+      elevation={3}
+      sx={{ m: "200px 750px", p: "25px", borderRadius: "25px" }}
+    >
+      <Stack justifyContent="space-evenly" alignItems="center">
+        <Button onClick={() => increment()} sx={{ borderRadius: "100px" }}>
+          <KeyboardArrowUpIcon />
+        </Button>
+        {value}
+        <Button onClick={() => decrement()} sx={{ borderRadius: "100px" }}>
+          <KeyboardArrowDownIcon />
+        </Button>
+      </Stack>
+    </Paper>
   );
 };
 

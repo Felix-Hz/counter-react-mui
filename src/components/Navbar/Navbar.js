@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Divider, Stack, Box } from "../../mui";
+import { Divider, Stack, Box, Button } from "../../mui";
 import { Link } from "react-router-dom";
 import Logo from "../../infinite.png";
 import AutorenewIcon from "@mui/icons-material/Autorenew";
@@ -29,13 +29,10 @@ const Navbar = () => {
         <Link to="/" relative="path">
           Contact
         </Link>
-        <Link to="/" relative="path">
-          {value}
-        </Link>
       </Stack>
-      <Box p={2}>
+      <Button p={2}>
         <AutorenewIcon fontSize="large" onClick={() => reset()} />
-      </Box>
+      </Button>
     </Stack>
   );
 };

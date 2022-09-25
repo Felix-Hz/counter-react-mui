@@ -19,7 +19,7 @@ const Counter = ({ initial }) => {
   };
 
   return (
-    <Stack direction="row">
+    <Stack direction="row" justifyContent="space-evenly" alignItems="center" ml={3} mr={4}>
       <Button onClick={() => decrement()}>-</Button>
       {value}
       <Button onClick={() => increment()}>+</Button>

@@ -16,7 +16,6 @@
 - A contact form in "Contact".
 - Allow user to slide the counter icons to increase/decrease the count.
 - Some blobbity blob animations around the background.
-- Gradient progress bar (maybe liquid?) showing distance to next checkpoint.
 - Cheering the user when he gets to 25, 50 and 100 in the count.
 - Animate the count reset.
 - Burger menu for mobile. 

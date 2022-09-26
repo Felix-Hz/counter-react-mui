@@ -5,3 +5,4 @@ export { default as Stack } from "@mui/material/Stack";
 export { default as Link } from "@mui/material/Link";
 export { default as Box } from "@mui/material/Box";
 export { default as Paper } from "@mui/material/Paper";
+export { default as Typography } from "@mui/material/Typography";

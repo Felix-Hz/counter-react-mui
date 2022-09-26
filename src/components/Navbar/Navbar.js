@@ -23,10 +23,10 @@ const Navbar = () => {
         direction="row"
         divider={<Divider orientation="vertical" flexItem />}
       >
-        <Link to="/" relative="path">
+        <Link to="/about" relative="path">
           About
         </Link>
-        <Link to="/" relative="path">
+        <Link to="/contact" relative="path">
           Contact
         </Link>
       </Stack>

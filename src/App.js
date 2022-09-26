@@ -1,5 +1,6 @@
-import { Navbar, Counter } from "./components/index";
+import { Navbar, Counter, About, Contact, Footer } from "./components/index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 import CountContext from "./context/CountContext";
 import { useState } from "react";
@@ -8,15 +9,18 @@ function App() {
   const [value, setValue] = useState(0);
 
   return (
-    <Router className="app">
+    <div className="app">
       <CountContext.Provider value={{ value, setValue }}>
         <Navbar />
-        <Counter />
         <Routes>
           <Route exact path="/counter" element={<Counter />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/" element={<Counter />} />
         </Routes>
+        <Footer />
       </CountContext.Provider>
-    </Router>
+    </div>
   );
 }
 export default App;

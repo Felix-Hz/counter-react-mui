@@ -11,7 +11,7 @@ const Navbar = () => {
     setValue(0);
   };
   return (
-    <Stack justifyContent="space-between" alignItems="center" direction="row">
+    <Stack justifyContent="space-between" alignItems="center" direction="row" sx={{height: "10vh"}}>
       <Link to="/" id="logo">
         <Box>
           <img src={Logo} alt="infinity-logo" className="infinity-logo" />

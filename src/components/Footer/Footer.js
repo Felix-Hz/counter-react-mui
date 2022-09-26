@@ -13,10 +13,10 @@ import { GiMoebiusTriangle } from "react-icons/gi";
 
 const Footer = () => {
   return (
-    <Box className="footer-container">
+    <Box className="footer-container" sx={{height: "11vh"}}>
       <Box className="footer-text-container">
         <Typography variant="h7" className="footer-text" gutterBottom>
-          Ars Nova was made with ⚡ and 💙 by Félix{" "}
+          Infinity was made with ⚡ and 💙 by Félix{" "}
         </Typography>
       </Box>
       <Box className="footer-triangle-container">

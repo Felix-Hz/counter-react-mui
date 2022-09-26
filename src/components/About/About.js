@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Stack, Box, Button, Typography } from "../../mui";
 
 const About = () => {
   return (
-    <div>This is Félix Hernández Vieyra, kneel.</div>
-  )
-}
+    <Box sx={{ height: "80.1vh" }}>
+      <Typography variant="h2" gutterBottom>
+        This is Félix Hernández Vieyra, kneel.
+      </Typography>
+    </Box>
+  );
+};
 
-export default About
+export default About;

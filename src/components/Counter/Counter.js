@@ -1,5 +1,5 @@
 // ------- IMPORTS ---------
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Stack, Box, Button, Paper, Typography } from "../../mui";
 import CountContext from "../../context/CountContext";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
@@ -28,7 +28,7 @@ const Counter = ({ initial }) => {
           m: "200px 750px",
           p: "25px",
           borderRadius: "25px",
-          backgroundColor: "#e556fe",
+          backgroundColor: "#1e2029",
         }}
       >
         <Stack justifyContent="space-evenly" alignItems="center">
@@ -36,16 +36,22 @@ const Counter = ({ initial }) => {
             onClick={() => increment()}
             sx={{ borderRadius: "150px", p: "16px", m: "0 16px" }}
           >
-            <KeyboardArrowUpIcon style={{ color: "#28d5ee" }} fontSize="large"/>
+            <KeyboardArrowUpIcon
+              style={{ color: "#28d5ee" }}
+              fontSize="large"
+            />
           </Button>
-          <Typography variant="h2" sx={{ m: "16px 0" }}>
+          <Typography variant="h2" sx={{ m: "16px 0" }} style={{color: "#28d5ee" }}>
             {value}
           </Typography>
           <Button
             onClick={() => decrement()}
             sx={{ borderRadius: "150px", p: "16px", m: "0 16px" }}
           >
-            <KeyboardArrowDownIcon style={{ color: "#28d5ee" }} fontSize="large"/>
+            <KeyboardArrowDownIcon
+              style={{ color: "#28d5ee" }}
+              fontSize="large"
+            />
           </Button>
         </Stack>
       </Paper>

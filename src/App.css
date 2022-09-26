@@ -48,7 +48,7 @@ a:active {
 }
 
 .app-container {
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(200px) brightness(80%);
 }
 
 .infinity-logo {

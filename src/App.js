@@ -11,14 +11,16 @@ function App() {
   return (
     <div className="app">
       <CountContext.Provider value={{ value, setValue }}>
-        <Navbar />
-        <Routes>
-          <Route exact path="/counter" element={<Counter />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/" element={<Counter />} />
-        </Routes>
-        <Footer />
+        <div className="app-container">
+          <Navbar />
+          <Routes>
+            <Route exact path="/counter" element={<Counter />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/" element={<Counter />} />
+          </Routes>
+          <Footer />
+        </div>
       </CountContext.Provider>
     </div>
   );

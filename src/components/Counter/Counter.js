@@ -1,6 +1,6 @@
 // ------- IMPORTS ---------
 import React, { useState, useContext } from "react";
-import { Stack, Box, Button, Paper } from "../../mui";
+import { Stack, Box, Button, Paper, Typography } from "../../mui";
 import CountContext from "../../context/CountContext";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -23,16 +23,29 @@ const Counter = ({ initial }) => {
   return (
     <Box sx={{ height: "60.4vh" }}>
       <Paper
-        elevation={3}
-        sx={{ m: "200px 750px", p: "25px", borderRadius: "25px" }}
+        elevation={15}
+        sx={{
+          m: "200px 750px",
+          p: "25px",
+          borderRadius: "25px",
+          backgroundColor: "#e556fe",
+        }}
       >
         <Stack justifyContent="space-evenly" alignItems="center">
-          <Button onClick={() => increment()} sx={{ borderRadius: "100px" }}>
-            <KeyboardArrowUpIcon />
+          <Button
+            onClick={() => increment()}
+            sx={{ borderRadius: "150px", p: "16px", m: "0 16px" }}
+          >
+            <KeyboardArrowUpIcon style={{ color: "#28d5ee" }} fontSize="large"/>
           </Button>
-          {value}
-          <Button onClick={() => decrement()} sx={{ borderRadius: "100px" }}>
-            <KeyboardArrowDownIcon />
+          <Typography variant="h2" sx={{ m: "16px 0" }}>
+            {value}
+          </Typography>
+          <Button
+            onClick={() => decrement()}
+            sx={{ borderRadius: "150px", p: "16px", m: "0 16px" }}
+          >
+            <KeyboardArrowDownIcon style={{ color: "#28d5ee" }} fontSize="large"/>
           </Button>
         </Stack>
       </Paper>

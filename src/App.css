@@ -40,11 +40,15 @@ a:active {
 }
 
 .app {
-  background-color: var(--white);
+  background: linear-gradient(to right, var(--cyan), var(--lightblue), var(--pink));
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   overflow: hidden;
   width: 100%;
+}
+
+.app-container {
+  backdrop-filter: blur(15px);
 }
 
 .infinity-logo {

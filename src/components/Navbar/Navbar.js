@@ -11,7 +11,12 @@ const Navbar = () => {
     setValue(0);
   };
   return (
-    <Stack justifyContent="space-between" alignItems="center" direction="row" sx={{height: "10vh"}}>
+    <Stack
+      justifyContent="space-between"
+      alignItems="center"
+      direction="row"
+      sx={{ height: "10vh" }}
+    >
       <Link to="/" id="logo">
         <Box>
           <img src={Logo} alt="infinity-logo" className="infinity-logo" />
@@ -30,8 +35,8 @@ const Navbar = () => {
           Contact
         </Link>
       </Stack>
-      <Button p={2}>
-        <AutorenewIcon fontSize="large" onClick={() => reset()} />
+      <Button p={2} sx={{ borderRadius: "150px", p: "16px", m: "0 16px" }}>
+        <AutorenewIcon fontSize="large" style={{ color: "#28d5ee" }} onClick={() => reset()} />
       </Button>
     </Stack>
   );

@@ -19,3 +19,5 @@
 - Gradient progress bar (maybe liquid?) showing distance to next checkpoint.
 - Cheering the user when he gets to 25, 50 and 100 in the count.
 - Animate the count reset.
+- Burger menu for mobile. 
+- Light/dark theme. 

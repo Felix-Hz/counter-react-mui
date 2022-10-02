@@ -3,19 +3,31 @@ import { Stack, Box, Button, Typography } from "../../mui";
 
 import ReactLogo from "../../assets/react-icon.png";
 import MUILogo from "../../assets/mui.png";
+import RouterLogo from "../../assets/router.png";
 import LightningEmoji from "../../assets/lightning.png";
 
 const About = () => {
   return (
     <Box sx={{ height: "80.1vh" }}>
-      <Typography
-        variant="h3"
-        gutterBottom
-        sx={{ backdropFilter: "blur(150px)", pl: "40px", m: "60px 0 0 0" }}
-      >
-        Infinity - Timeless Counter
-      </Typography>
-      <Stack spacing={4} sx={{m: "30px 0"}}>
+      <Box sx={{ ml: "40px" }}>
+        <Typography
+          variant="h1"
+          gutterBottom
+          sx={{
+            backdropFilter: "blur(150px)",
+            p: "20px",
+            m: "20px 0 0 0",
+            color: "#ffffffff",
+            backgroundColor: "rgba(255, 255, 255, 0.05)",
+            display: "table",
+            borderRadius: "15px",
+          }}
+        >
+          Infinity - Timeless Counter
+        </Typography>
+      </Box>
+
+      <Stack spacing={1} sx={{ m: "30px 0 0 0" }}>
         <Box
           sx={{
             display: "flex",
@@ -32,10 +44,20 @@ const About = () => {
               src={LightningEmoji}
               alt="lightning-logo"
               className="lightning-logo"
-              style={{ maxHeight: "20px" }}
+              style={{ maxHeight: "30px" }}
             />
           </Box>
-          <Typography variant="h5" gutterBottom>
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              color: "#ffffffff",
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              textAlign: "center",
+              borderRadius: "15px",
+              padding: "5px",
+            }}
+          >
             Este es el primer elemento.
           </Typography>
         </Box>
@@ -55,21 +77,75 @@ const About = () => {
               src={LightningEmoji}
               alt="lightning-logo"
               className="lightning-logo"
-              style={{ maxHeight: "20px" }}
+              style={{ maxHeight: "30px" }}
             />
           </Box>
-          <Typography variant="h5" gutterBottom>
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              color: "#ffffffff",
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              textAlign: "center",
+              borderRadius: "15px",
+              padding: "5px",
+            }}
+          >
             Este es el segundo elemento.
           </Typography>
         </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            pl: "60px",
+            alignContent: "center",
+            alignItems: "center",
+            gap: "14px",
+            backdropFilter: "blur(10px)",
+          }}
+        >
+          <Box>
+            <img
+              src={LightningEmoji}
+              alt="lightning-logo"
+              className="lightning-logo"
+              style={{ maxHeight: "30px" }}
+            />
+          </Box>
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              color: "#ffffffff",
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              textAlign: "center",
+              borderRadius: "15px",
+              padding: "5px",
+            }}
+          >
+            Este es el tercer elemento.
+          </Typography>
+        </Box>
       </Stack>
-      <Typography
-        variant="h3"
-        gutterBottom
-        sx={{ backdropFilter: "blur(150px)", pl: "40px" }}
-      >
-        Technologies used in this project
-      </Typography>
+      <Box sx={{ ml: "40px" }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{
+            backdropFilter: "blur(150px)",
+            p: "20px",
+            m: "35px 0 0 0",
+            color: "#ffffffff",
+            backgroundColor: "rgba(255, 255, 255, 0.05)",
+            display: "table",
+            borderRadius: "15px",
+            mb: "45px",
+          }}
+        >
+          Technologies used in this project
+        </Typography>
+      </Box>
       <Stack
         direction="row"
         sx={{
@@ -80,7 +156,7 @@ const About = () => {
         }}
         spacing={24}
       >
-        <Stack sx={{ padding: "12px" }} spacing={3}>
+        <Stack sx={{ padding: "12px", maxWidth: "25%" }} spacing={3}>
           <Box
             sx={{
               display: "flex",
@@ -104,11 +180,22 @@ const About = () => {
               style={{ maxHeight: "50px", ml: "auto", mr: "auto" }}
             />
           </Box>
-          <Typography variant="h6" gutterBottom>
-            Abajo de react
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              color: "#ffffffff",
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              textAlign: "center",
+              borderRadius: "15px",
+              padding: "10px",
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Typography>
         </Stack>
-        <Stack sx={{ padding: "12px" }} spacing={3}>
+        <Stack sx={{ padding: "12px", maxWidth: "25%" }} spacing={3}>
           <Box
             sx={{
               display: "flex",
@@ -132,8 +219,58 @@ const About = () => {
               style={{ maxHeight: "50px", ml: "auto", mr: "auto" }}
             />
           </Box>
-          <Typography variant="h6" gutterBottom>
-            Abajo de MUI
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              color: "#ffffffff",
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              textAlign: "center",
+              borderRadius: "15px",
+              padding: "10px",
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Typography>
+        </Stack>
+        <Stack sx={{ padding: "12px", maxWidth: "25%" }} spacing={3}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignContent: "center",
+              alignItems: "center",
+              padding: "30px",
+              borderRadius: "120px",
+              backgroundColor: "#1e2029",
+              borderRadius: "90px",
+              padding: "20px",
+              maxWidth: "150px",
+              ml: "auto",
+              mr: "auto",
+            }}
+          >
+            <img
+              src={RouterLogo}
+              alt="mui-logo"
+              className="mui-logo"
+              style={{ maxHeight: "50px", ml: "auto", mr: "auto" }}
+            />
+          </Box>
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              color: "#ffffffff",
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              textAlign: "center",
+              borderRadius: "15px",
+              padding: "10px",
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Typography>
         </Stack>
       </Stack>

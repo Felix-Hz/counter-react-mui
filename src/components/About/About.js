@@ -9,7 +9,7 @@ import LightningEmoji from "../../assets/lightning.png";
 const About = () => {
   return (
     <Box sx={{ height: "80.1vh" }}>
-      <Box sx={{ ml: "40px" }}>
+      <Box sx={{ ml: "40px", display: "flex", justifyContent: "center" }}>
         <Typography
           variant="h1"
           gutterBottom
@@ -21,13 +21,13 @@ const About = () => {
             backgroundColor: "rgba(255, 255, 255, 0.05)",
             display: "table",
             borderRadius: "15px",
+            textAlign: "center",
           }}
         >
           Infinity - Timeless Counter
         </Typography>
       </Box>
-
-      <Stack spacing={1} sx={{ m: "30px 0 0 0" }}>
+      <Stack spacing={1} sx={{ m: "60px 0 0 0" }}>
         <Box
           sx={{
             display: "flex",
@@ -58,7 +58,7 @@ const About = () => {
               padding: "5px",
             }}
           >
-            Este es el primer elemento.
+            Este es el primer elemento. Agrego un poco de texto simplemente para ver como queda.
           </Typography>
         </Box>
         <Box
@@ -91,7 +91,7 @@ const About = () => {
               padding: "5px",
             }}
           >
-            Este es el segundo elemento.
+            Este es el segundo elemento. Agrego un poco de texto simplemente para ver como queda.
           </Typography>
         </Box>
         <Box
@@ -124,13 +124,13 @@ const About = () => {
               padding: "5px",
             }}
           >
-            Este es el tercer elemento.
+            Este es el tercer elemento. Agrego un poco de texto simplemente para ver como queda.
           </Typography>
         </Box>
       </Stack>
-      <Box sx={{ ml: "40px" }}>
+      <Box sx={{ ml: "40px", display: "flex", justifyContent: "center" }}>
         <Typography
-          variant="h4"
+          variant="h3"
           gutterBottom
           sx={{
             backdropFilter: "blur(150px)",
@@ -140,10 +140,10 @@ const About = () => {
             backgroundColor: "rgba(255, 255, 255, 0.05)",
             display: "table",
             borderRadius: "15px",
-            mb: "45px",
+            mb: "30px",
           }}
         >
-          Technologies used in this project
+          Technologies
         </Typography>
       </Box>
       <Stack
@@ -153,6 +153,7 @@ const About = () => {
           justifyContent: "center",
           alignContent: "center",
           alignItems: "center",
+          mb: "60px"
         }}
         spacing={24}
       >

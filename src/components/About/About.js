@@ -253,8 +253,8 @@ const About = () => {
           >
             <img
               src={RouterLogo}
-              alt="mui-logo"
-              className="mui-logo"
+              alt="react-router-logo"
+              className="react-router-logo"
               style={{ maxHeight: "50px", ml: "auto", mr: "auto" }}
             />
           </Box>

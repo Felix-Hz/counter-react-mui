@@ -8,7 +8,6 @@ import {
   Paper,
   Typography,
   CircularProgress,
-  LinearProgress,
 } from "../../mui";
 import CountContext from "../../context/CountContext";
 
@@ -17,7 +16,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 // ------- KODE --------- \\
 
-const Counter = ({ initial }) => {
+const Counter = ({}) => {
   const { value, setValue } = useContext(CountContext);
 
   const decrement = () => {
@@ -48,11 +47,12 @@ const Counter = ({ initial }) => {
           sx={{
             mt: "50px",
             color: "#28d5ee",
+            opacity: "0.6",
           }}
         />
-        
+
         <Paper
-          elevation={15}
+          elevation={23}
           sx={{
             position: "absolute",
             top: "32%",

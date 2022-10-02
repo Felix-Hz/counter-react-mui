@@ -61,6 +61,7 @@ const Counter = ({}) => {
             p: "25px",
             borderRadius: "25px",
             backgroundColor: "#1e2029",
+            boxShadow: "1px 1px 15px #ffffffff"
           }}
         >
           <Stack justifyContent="space-evenly" alignItems="center">

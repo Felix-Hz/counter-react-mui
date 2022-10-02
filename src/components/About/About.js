@@ -8,10 +8,10 @@ import LightningEmoji from "../../assets/lightning.png";
 
 const About = () => {
   return (
-    <Box sx={{ height: "80.1vh" }}>
+    <Box>
       <Box sx={{ ml: "40px", display: "flex", justifyContent: "center" }}>
         <Typography
-          variant="h1"
+          variant="h3"
           gutterBottom
           sx={{
             backdropFilter: "blur(150px)",
@@ -27,7 +27,7 @@ const About = () => {
           Infinity - Timeless Counter
         </Typography>
       </Box>
-      <Stack spacing={1} sx={{ m: "60px 0 0 0" }}>
+      <Stack spacing={1} sx={{ m: "45px 0 0 0" }}>
         <Box
           sx={{
             display: "flex",
@@ -130,7 +130,7 @@ const About = () => {
       </Stack>
       <Box sx={{ ml: "40px", display: "flex", justifyContent: "center" }}>
         <Typography
-          variant="h3"
+          variant="h4"
           gutterBottom
           sx={{
             backdropFilter: "blur(150px)",
@@ -172,6 +172,7 @@ const About = () => {
               maxWidth: "150px",
               ml: "auto",
               mr: "auto",
+              boxShadow: "1px 1px 15px #ffffffff"
             }}
           >
             <img
@@ -211,6 +212,7 @@ const About = () => {
               maxWidth: "150px",
               ml: "auto",
               mr: "auto",
+              boxShadow: "1px 1px 15px #ffffffff"
             }}
           >
             <img
@@ -250,6 +252,7 @@ const About = () => {
               maxWidth: "150px",
               ml: "auto",
               mr: "auto",
+              boxShadow: "1px 1px 15px #ffffffff"
             }}
           >
             <img
